@@ -7,6 +7,7 @@ import acadsoc from '../assets/acadsoc-thumbnail.jpeg';
 import haowj from '../assets/haowj-thumbnail.png';
 import profPic from '../assets/mladen-profile-pic.jpg';
 import project1 from '../assets/mladen-website.png';
+import project2 from '../assets/logo.jpg';
 
 export const MladenData: IData = {
     personInfo: {
@@ -72,6 +73,7 @@ export const MladenData: IData = {
         'git',
         'react',
         'vsc',
+        'styledcomponents',
     ],
     projects: [
         {
@@ -87,7 +89,23 @@ export const MladenData: IData = {
             title: 'Resume page',
             desc: "This project is a portfolio and resume page in one. The technologies I've used include CSS, HTML, TypeScript, NextJS, StyledJSX, etc.",
             demoLink: 'https://resume-cicd.vercel.app/',
-            codeLink: 'https://github.com/igor-mircic/resume/tree/mladen-page',
+            codeLink: 'https://github.com/mladen-s/resume-cicd',
+        },
+        {
+            img: project2,
+            tags: [
+                'css',
+                'html',
+                'responsive',
+                'nextjs',
+                'typescript',
+                'react',
+                'styledcomponents',
+            ],
+            title: 'Kreativni Univerzum',
+            desc: "This project is a teaser page for a new, upstart company. The technologies I've used include CSS, HTML, TypeScript, NextJS, Styled Components, React Transition Group etc.",
+            demoLink: 'https://kreativni-univerzum-cicd.vercel.app/',
+            codeLink: 'https://github.com/mladen-s/kreativni-univerzum',
         },
     ],
 };
