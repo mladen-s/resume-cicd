@@ -8,6 +8,7 @@ import haowj from '../assets/haowj-thumbnail.png';
 import profPic from '../assets/mladen-profile-pic.jpg';
 import project1 from '../assets/mladen-website.png';
 import project2 from '../assets/logo.jpg';
+import project3 from '../assets/rest-countries1.png';
 
 export const MladenData: IData = {
     personInfo: {
@@ -74,8 +75,43 @@ export const MladenData: IData = {
         'react',
         'vsc',
         'styledcomponents',
+        'redux',
     ],
     projects: [
+        {
+            img: project3,
+            tags: [
+                'css',
+                'html',
+                'responsive',
+                'react',
+                'typescript',
+                'nextjs',
+                'mobile-first',
+                'redux',
+                'react-infinite-scroll-component',
+            ],
+            title: 'REST Countries',
+            desc: "This project is a challenge from www.frontendmentor.io. The technologies I've used include CSS, HTML, TypeScript, NextJS, Redux, React-infinite-scroll-component, and is built using the mobile-first approach.",
+            demoLink: 'https://countries-api-blue.vercel.app/',
+            codeLink: 'https://github.com/mladen-s/countries-api/',
+        },
+        {
+            img: project2,
+            tags: [
+                'css',
+                'html',
+                'responsive',
+                'nextjs',
+                'typescript',
+                'react',
+                'styledcomponents',
+            ],
+            title: 'Kreativni Univerzum',
+            desc: "This project is a teaser page for a new, upstart company. The technologies I've used include CSS, HTML, TypeScript, NextJS, Styled Components, React Transition Group, etc.",
+            demoLink: 'https://kreativni-univerzum-cicd.vercel.app/',
+            codeLink: 'https://github.com/mladen-s/kreativni-univerzum',
+        },
         {
             img: project1,
             tags: [
@@ -90,22 +126,6 @@ export const MladenData: IData = {
             desc: "This project is a portfolio and resume page in one. The technologies I've used include CSS, HTML, TypeScript, NextJS, StyledJSX, etc.",
             demoLink: 'https://resume-cicd.vercel.app/',
             codeLink: 'https://github.com/mladen-s/resume-cicd',
-        },
-        {
-            img: project2,
-            tags: [
-                'css',
-                'html',
-                'responsive',
-                'nextjs',
-                'typescript',
-                'react',
-                'styledcomponents',
-            ],
-            title: 'Kreativni Univerzum',
-            desc: "This project is a teaser page for a new, upstart company. The technologies I've used include CSS, HTML, TypeScript, NextJS, Styled Components, React Transition Group etc.",
-            demoLink: 'https://kreativni-univerzum-cicd.vercel.app/',
-            codeLink: 'https://github.com/mladen-s/kreativni-univerzum',
         },
     ],
 };

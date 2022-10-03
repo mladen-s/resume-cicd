@@ -76,6 +76,14 @@ const ProjectsList = ({ projects }: IProjectsProp) => {
                     >
                         MaterialUI
                     </FilterButton>
+                    <FilterButton
+                        className="filter_btn"
+                        dataset="redux"
+                        activeFilter={activeFilter}
+                        setActiveFilter={setActiveFilter}
+                    >
+                        Redux
+                    </FilterButton>
                 </div>
             </div>
             {projectList}
