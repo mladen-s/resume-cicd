@@ -1,7 +1,18 @@
 import Image from 'next/image';
 import { MdPhone, MdMail } from 'react-icons/md';
+import { SiGithub, SiSkype, SiLinkedin } from 'react-icons/si';
 
-const PersonInfo = ({ img, name, job, email, phone, desc }: IPersonInfo) => {
+const PersonInfo = ({
+    img,
+    name,
+    job,
+    email,
+    phone,
+    desc,
+    github,
+    skype,
+    linkedin,
+}: IPersonInfo) => {
     return (
         <div className={'rounded container person'}>
             <Image
@@ -16,12 +27,48 @@ const PersonInfo = ({ img, name, job, email, phone, desc }: IPersonInfo) => {
             <p>{job}</p>
             <div className="subContainer">
                 <div className="flexContainer">
-                    <MdMail size={26} />
-                    <p>{email}</p>
+                    <div className="icon">
+                        <MdMail size={26} />
+                    </div>
+                    <div className="infoText">
+                        <p>{email}</p>
+                    </div>
                 </div>
                 <div className="flexContainer">
-                    <MdPhone size={26} />
-                    <p>+{phone}</p>
+                    <div className="icon">
+                        <MdPhone size={26} />
+                    </div>
+                    <div className="infoText">
+                        <p>+{phone}</p>
+                    </div>
+                </div>
+                <div className="flexContainer">
+                    <div className="icon">
+                        <SiGithub size={26} />
+                    </div>
+                    <div className="infoText">
+                        <a href={github} target="_blank" rel="noreferrer">
+                            <p className="flexContainer">{github}</p>
+                        </a>
+                    </div>
+                </div>
+                <div className="flexContainer">
+                    <div className="icon">
+                        <SiSkype size={26} />
+                    </div>
+                    <div className="infoText">
+                        <p>{skype}</p>
+                    </div>
+                </div>
+                <div className="flexContainer">
+                    <div className="icon">
+                        <SiLinkedin size={26} />
+                    </div>
+                    <div className="infoText">
+                        <a href={linkedin} target="_blank" rel="noreferrer">
+                            <p className="flexContainer">{linkedin}</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <p className="desc">{desc}</p>
@@ -30,7 +77,7 @@ const PersonInfo = ({ img, name, job, email, phone, desc }: IPersonInfo) => {
                     .container {
                         width: 413px;
                         padding: 30px;
-                        height: 719px;
+                        min-height: 719px;
                     }
                     h1 {
                         margin: 30px 0 0;
@@ -42,12 +89,23 @@ const PersonInfo = ({ img, name, job, email, phone, desc }: IPersonInfo) => {
                     }
                     .flexContainer p {
                         color: var(--main-gray-font);
-                        margin: 0 0 15px 20px;
-                        display: flex;
+                        overflow-wrap: anywhere;
+                    }
+                    .flexContainer .infoText {
+                        margin: 0;
+                        padding: 10px 20px;
                     }
                     .flexContainer {
                         display: flex;
                         padding: 0;
+                        align-items: center;
+                    }
+                    .flexContainer a {
+                        cursor: pointer;
+                    }
+                    .flexContainer .icon {
+                        flex: 0 0 26px;
+                        padding: 5px;
                     }
 
                     .desc {

@@ -15,6 +15,8 @@ import {
     SiTypescript,
     SiVisualstudiocode,
     SiVuedotjs,
+    SiGraphql,
+    SiPrisma,
 } from 'react-icons/si';
 
 export const skills: Iskills = {
@@ -73,5 +75,13 @@ export const skills: Iskills = {
     vsc: {
         icon: SiVisualstudiocode,
         skillName: 'Visual Studio Code',
+    },
+    graphql: {
+        icon: SiGraphql,
+        skillName: 'GraphQL',
+    },
+    prisma: {
+        icon: SiPrisma,
+        skillName: 'Prisma',
     },
 };

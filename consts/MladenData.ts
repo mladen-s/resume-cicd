@@ -17,7 +17,10 @@ export const MladenData: IData = {
         job: 'Front-end developer',
         email: 'mladen.stankovic@hotmail.com',
         phone: 381695335466,
-        desc: 'Hello! My name is Mladen, and I am an aspiring web developer from Serbia.',
+        desc: "Hello! My name is Mladen, and I'm an aspiring web developer from Serbia.",
+        github: 'https://github.com/mladen-s',
+        skype: 'live:mladen.stankovic90',
+        linkedin: 'https://www.linkedin.com/in/mladen-stankovic-8142b2175/',
     },
     hobbies: [
         {
@@ -76,6 +79,8 @@ export const MladenData: IData = {
         'vsc',
         'styledcomponents',
         'redux',
+        'graphql',
+        'prisma',
     ],
     projects: [
         {
@@ -106,6 +111,8 @@ export const MladenData: IData = {
                 'typescript',
                 'react',
                 'styledcomponents',
+                'graphql',
+                'prisma',
             ],
             title: 'Kreativni Univerzum',
             desc: "This project is a teaser page for a new, upstart company. The technologies I've used include CSS, HTML, TypeScript, NextJS, Styled Components, React Transition Group, etc.",

@@ -5,6 +5,9 @@ interface IPersonInfo {
     email: string;
     phone: number;
     desc: string;
+    github: string;
+    skype: string;
+    linkedin: string;
 }
 interface IHobbies {
     img?: StaticImageData;
