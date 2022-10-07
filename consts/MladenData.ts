@@ -5,7 +5,7 @@ import nr3d from '../assets/3d-javier-miranda-MrWOCGKFVDg-unsplash.jpg';
 import engoo from '../assets/engoo-thumbnail.jpeg';
 import acadsoc from '../assets/acadsoc-thumbnail.jpeg';
 import haowj from '../assets/haowj-thumbnail.png';
-import profPic from '../assets/mladen-profile-pic.jpg';
+import profPic from '../assets/mladen-profile-pic-new-crop.jpg';
 import project1 from '../assets/mladen-website.png';
 import project2 from '../assets/logo.jpg';
 import project3 from '../assets/rest-countries1.png';
